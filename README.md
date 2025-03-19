@@ -1,3 +1,8 @@
+***NAME : RAMYA G***
+
+
+REGISTER NO : 212224220078
+
 # FULL_ADDER_SUBTRACTOR
 
 Implementation-of-Full-Adder-and-Full-subtractor-circuit
@@ -38,22 +43,42 @@ Borrow out = A'Bin + A'B + BBin
 
 **Truthtable**
 
+![Screenshot 2025-03-19 035947](https://github.com/user-attachments/assets/b8f35b29-aa66-4221-a177-a57d94467eb8)
+
+
 **Procedure**
 
 Write the detailed procedure here
 
 **Program:**
+```
+module ex4(a,b,c,sum,carry,difference,borrow);
+input a,b,c;
+output sum,carry,difference,borrow;
+assign sum=(a^b^c); 
+assign carry= (a & b|a & c|b & c);
+assign difference= (a^b^c);
+assign borrow= (~a&b|~a&c|b&c);
+endmodule
 
+
+```
 /* Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
 */
 
 **RTL Schematic**
 
+![Screenshot 2025-03-19 035650](https://github.com/user-attachments/assets/8c82f6ca-2492-4f1e-9b5f-5648dc33df4d)
+
+
 **Output Timing Waveform**
+
+![Screenshot 2025-03-19 024926](https://github.com/user-attachments/assets/9b663bff-4bb7-4e9e-b4cb-63454f4f03c7)
+
 
 **Result:**
 
-Thus the Full Adder and Full Subtractor circuits are designed and the truth tables is verified using Quartus software.
+Thus the given Full-Adder-And-Full-Subtractor circuits are verified successfully  in QUATRUS II by verilog HDL programming.
 
 
 
